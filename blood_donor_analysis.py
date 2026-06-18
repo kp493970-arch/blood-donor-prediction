@@ -110,7 +110,7 @@ plt.plot(fpr, tpr, color='steelblue', lw=2,
 plt.plot([0,1],[0,1], color='gray', lw=1, linestyle='--', label='Random (0.5)')
 plt.xlabel('False Positive Rate')
 plt.ylabel('True Positive Rate (Sensitivity)')
-plt.title('ROC Curve — Blood Donor Return Prediction')
+plt.title('ROC Curve - Blood Donor Return Prediction')
 plt.legend()
 plt.tight_layout()
 plt.savefig('../blood_donor_roc.png', dpi=150)
@@ -118,7 +118,7 @@ print("\nROC curve saved as blood_donor_roc.png")
 
 # ---- 11. SUMMARY ----
 print("""
-=== YOUR INTERVIEW SUMMARY ===
+
 748 real blood donors, ~24% donated again (imbalanced dataset)
 Dropped Monetary: it equals Frequency x 250 (multicollinear, no new info)
 Stratified 75/25 split, scaler fit on train only (no data leakage)
